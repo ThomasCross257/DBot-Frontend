@@ -11,21 +11,34 @@
 </head>
 <body>
     <div class="wrapper">
-    <div class="header">
-        <a href="register.html" target="_blank">Register</a>
-        <a href="login.html" target="_blank">Login</a>
+    <div class="navbar">
+        <a href="NULL" target="_blank">Dashboard</a>
+        <a href="NULL" target="_blank">Login With Discord</a>
     </div>
     <div class="utilities">
-        <p>Suggestions</p><br>
-        <p>Bug Reports</p><br>
-        <p>Tutorial</p><br>
+        <ul>
+            <li><h2>Suggestions</h2></li>
+            <li><h2>Bug Reports</h2></li>
+            <li><h2>Tutorial</h2></li>
+            <li><h2>Links</h2></li>
+            <li><h2>News</h2></li>
+        </ul>
     </div>
-    <div class="AddButton">
-        <a href="NULL" target="_blank">Add Bot</a>
+    <a href="https://discord.com/api/oauth2/authorize?client_id=938563118055952405&permissions=8&redirect_uri=https%3A%2F%2Fd-bot.me%2F&response_type=code&scope=identify%20guilds.members.read%20bot%20applications.commands%20applications.builds.read%20applications.store.update%20guilds.join%20guilds" target="_blank"><div class="AddButton">
+        Add Bot to Server
+    </div></a>
+    <a href="NULL" target="_blank"><div class="JoinButton">
+        Join Our Discord!
     </div>
-    <div class="JoinButton">
-        <a href="NULL" target="_blank">Join Discord</a>
+    </a>
+    <div class="WelcomeContent">
+        <div id ="Suggestions"></div>
+        <div id ="Tutorial"></div>
+        <div id ="Bugs"></div>
+        <div id ="News"></div>
+        <div id ="Links"></div>
     </div>
+    <div id = "Widget"><iframe src="https://discord.com/widget?id=952818000694763522&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>
 </div>
 </body>
 </html>
