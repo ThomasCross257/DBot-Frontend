@@ -60,6 +60,9 @@ body{
     padding: 10px;
     list-style: none;
 }
+.utilities ul{
+    text-decoration: none;
+}
 
 .AddButton a{
     color: black;
