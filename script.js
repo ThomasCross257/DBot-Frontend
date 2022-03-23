@@ -1,6 +1,6 @@
 function unhideSuggestions(){
     var a = document.getElementById("Suggestions")
-    var b = document.getElementById("Bugs")
+    var b = document.getElementById("Welcome")
     var c = document.getElementById("News")
     var d = document.getElementById("Links")
     if (a.style.display === "none") {
@@ -12,9 +12,9 @@ function unhideSuggestions(){
         a.style.display = "none";
     }
 }
-function unhideBugs(){
+function unhideWelcome(){
     var a = document.getElementById("Suggestions")
-    var b = document.getElementById("Bugs")
+    var b = document.getElementById("Welcome")
     var c = document.getElementById("News")
     var d = document.getElementById("Links")
     if (b.style.display === "none") {
@@ -28,7 +28,7 @@ function unhideBugs(){
 }
 function unhideNews(){
     var a = document.getElementById("Suggestions")
-    var b = document.getElementById("Bugs")
+    var b = document.getElementById("Welcome")
     var c = document.getElementById("News")
     var d = document.getElementById("Links")
     if (d.style.display === "none") {
@@ -42,7 +42,7 @@ function unhideNews(){
 }
 function unhideLinks(){
     var a = document.getElementById("Suggestions")
-    var b = document.getElementById("Bugs")
+    var b = document.getElementById("Welcome")
     var c = document.getElementById("News")
     var d = document.getElementById("Links")
     if (d.style.display === "none") {

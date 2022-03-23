@@ -123,8 +123,8 @@ body{
 #News{
     display: none;
 }
-#Bugs{
-    display: none;
+#Welcome{
+    display: block;
 }
 #Widget{
     background-color:#62B1F1;
