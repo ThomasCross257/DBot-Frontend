@@ -31,13 +31,13 @@ function unhideNews(){
     var b = document.getElementById("Welcome")
     var c = document.getElementById("News")
     var d = document.getElementById("Links")
-    if (d.style.display === "none") {
-        d.style.display = "block";
+    if (c.style.display === "none") {
+        c.style.display = "block";
         a.style.display = "none";
         b.style.display = "none";
-        c.style.display = "none";
-      } else {
         d.style.display = "none";
+      } else {
+        c.style.display = "none";
     }
 }
 function unhideLinks(){
