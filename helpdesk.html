@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/favicon/favicon.ico">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Helpdesk</title>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="navbar">
+        <a href="javascript:void(0)">Dashboard</a>
+        <a href="tutorial.html">Tutorial</a>
+        <a href="helpdesk.html">Support</a>
+        <a href="javascript:void(0)">Login With Discord</a>
+        <a href="index.html">Home</a>
+    </div>
+    <div class="OpenTickets">
+        <div id="DeveloperMode">
+            
+            <div id="TicketInfo">
+                <a href="javascript:void(0)" onclick="showDetails()">
+                <div id="BackButton">
+                    <h3>Back</h3>
+                </div>
+                </a>
+                <br><br><br>
+                <h3>Ticket ID: DBOT_D-4848</h3>
+                <h3>Username:SomeAccount#0000</h3>
+                <h3>User ID: 000000000000000000000000</h3>
+                <h3>Server ID: 4485937486598347</h3>
+                <h3>Issue: "D-Bot is allowing non-admins to ban other users"</h3>
+                <label for="RespondIssue"><h3>Respond Below</h3></label>
+                <textarea id="RespondIssue" name="response"rows="5" cols="33"></textarea>
+            </div>
+            <div id="UserTag">
+                <h2>User Tag</h2>
+                <h3>SomeAccount#0000</h3>
+            </div>
+            <div id="TicketNum">
+                <h2>Ticket ID</h2>
+                <h3>DBOT_D-4848</h3>
+            </div>
+            <div id="UserID">
+                <h2>User ID</h2>
+                <h3>000000000000000000000000</h3>
+            </div>
+            <a href="javascript:void(0)" onclick="showDetails()">
+            <div id="AnswerDropDown">
+                <h2>Answered?</h2>
+                <h3>No</h3>
+            </div>
+        </a>
+        </div>
+
+        <div id="UserMode">
+            <div id="TicketCol">
+                <h2>Ticket ID</h2>
+                <h3>DBOT_D-79939</h3>
+                <h3>DBOT_D-82928</h3>
+                <h3>DBOT_D-52149</h3>
+            </div>
+            <div id="ProblemCol">
+                <h2>Issue</h2>
+                <h3>Trivia's formmatting is off.</h3>
+                <h3>D-Bot isn't responding to commands.</h3>
+                <h3>Test</h3>
+            </div>
+            <div id="ResolvedCol">
+                <h2>Resolved</h2>
+                <h3>No</h3>
+                <h3>Yes</h3>
+                <h3>Yes</h3>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:void(0)" onclick="SwapModes()"><div id="SwapButton">Swap</div></a>
+</div>
+</body>
+</html>
