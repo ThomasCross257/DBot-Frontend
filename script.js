@@ -1,3 +1,4 @@
+const { Server } = require("tls");
 
 function unhideSuggestions(){
     var a = document.getElementById("Suggestions")
@@ -88,6 +89,42 @@ function SwapModes(){
   }
   else{
     DevMode.style.display = "none";
+    UsrMode.style.display = "none";
     UsrMode.style.display = "block";
+  }
+}
+
+function returnServers(){
+  var ServerList = document.getElementById("ServerList");
+  var Dashboard = document.getElementById("ServerDashboardMain");
+  if(ServerList.style.display === "none"){
+    Dashboard.style.display = "none";
+    ServerList.style.display = "block";
+    document.getElementById("ServerTitle").textContent = "No Server Selected";
+  }
+  
+  else{
+    ServerList.style.display = "none";
+    Dashboard.style.display = "none";
+    ServerList.style.display = "block"
+    return;
+  }
+}
+function manageServer(){
+  var ServerList = document.getElementById("ServerList");
+  var Dashboard = document.getElementById("ServerDashboardMain");
+  var Name = document.getElementById("ServerListOption")
+  if(Dashboard.style.display == "none"){
+    Dashboard.style.display = "block";
+    ServerList.style.display = "none";
+    document.getElementById("ServerTitle").textContent = Name.innerText;
+  }
+  else{
+    ServerList.style.display = "none";
+    Dashboard.style.display = "none";
+    Dashboard.style.display = "block"
+    document.getElementById("ServerTitle").textContent = Name.innerText;
+    console.log("Done");
+    return;
   }
 }

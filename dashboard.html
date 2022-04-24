@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/favicon/favicon.ico">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>D-Dash Enter</title>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="slimnavbar">
+        <div class="DashTitle"><h1>D-Dash</h1></div>
+        <a href="javascript:void(0)" onclick="returnServers()">Servers</a>
+        <a href="index.html">Logout</a>
+        <a href="index.html">Home</a>        
+    </div>
+    <div id="ServerBar">
+        <h2 id="ServerTitle">No Server Selected</h2>
+    </div>
+    <div id="ServerList">
+        <h2>Select a Server</h2>
+        <a href="javascript:void(0)">
+        <div id="ServerListOption" onclick="manageServer()">
+            <img id="iconTag"src="assets/images/brave_1ZMiLOv1FD.png">
+            <h3>Server 1</h3>
+        </div>
+        </a>
+        <br>
+        <a href="javascript:void(0)" onclick="manageServer()">
+        <div id="ServerListOption">
+            <img id="iconTag"src="assets/images/brave_1ZMiLOv1FD.png">
+            <h3>Server 2</h3>
+        </div>
+        </a>
+    </div>
+    <div id="ServerDashboardMain" >
+        <div class="DashboardCmdManip">
+            <h2>No commands? Create one here!</h2>
+        </div>
+        <div class="DashboardCmdList">
+            <h2>Custom Commands</h2>
+        </div>
+    </div>
+</div>
+</body>
+</html>
