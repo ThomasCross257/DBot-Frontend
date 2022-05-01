@@ -413,6 +413,9 @@ code{
     margin: 0 auto;
     text-align: center;
 }
+.DashExplain p{
+    margin-right:10%;
+}
 /*------------------------Dashboard CSS-------------------------*/
 .slimnavbar{
     background-color: #A1B8CA;
@@ -524,4 +527,45 @@ code{
 .DashboardCmdManip h2{
     margin-left: 33%;
     margin-top: 25%;
+}
+#CMDSelect{
+    display:none;
+}
+#CMDCreate{
+    margin: 0 auto;
+    display: none;
+}
+#CMDCreate label{
+    display: inline-block;
+    margin: 0 auto;
+}
+#firstCreate{
+    display: block;
+    width: 25%;
+    height: 30%;
+    background: #FF7F11;
+    margin: 0 auto;
+    border-style: solid;
+    text-align: center;
+}
+#CreateBack{
+    display: block;
+    width: 25%;
+    height: 30%;
+    background: red;
+    margin: 0 auto;
+    border-style: solid;
+    text-align: center;
+}
+#CMDCreateBTN{
+    display: block;
+    width: 25%;
+    height: 30%;
+    background: #5cb85c;
+    margin: 0 auto;
+    border-style: solid;
+    text-align: center;
+}
+#ChildDivs{
+    display:block;
 }
