@@ -141,7 +141,7 @@ body{
     height: 500%;
     margin-left: 79.5%;
 }
-/*----------------------------------------------------------------*/
+/*-----------------------------Tutorial Page-----------------------------------*/
 
 .TUTSideNav{
     background-color:#62B1F1;
@@ -568,4 +568,22 @@ code{
 }
 #ChildDivs{
     display:block;
+}
+
+#CUSTOM_CMD{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 20px;
+}
+
+#CUSTOM_CMDt a:hover{
+    text-shadow: 4px 4px 20px #FF7F11;
+    color:#F02D3A
+}
+
+#CMDForm{
+    margin-left: 10%;
+}
+#CMDSelect{
+    margin-left: 38%;
 }

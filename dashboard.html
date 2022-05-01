@@ -40,26 +40,30 @@
     <div id="ServerDashboardMain" >
         <div class="DashboardCmdManip">
             <div id = "ChildDivs">
-            <div id="noCMD">
-                <h2>No commands? Create one here!</h2>
-                <a href="javascript:void(0)" onclick="createCommand()"><div id="firstCreate">Create Command</div></a>
-            </div>
-            <h2 id="CMDSelect">Select a Command</h2>
+            <h2 id="noCMD">No commands? Create one here!</h2>
+            <h2 id="CMDSelect">No command selected</h2>
+            <a href="javascript:void(0)" onclick="createCommand()"><div id="firstCreate">Create Command</div></a>
             </div>
             <div id="CMDCreate">
-                <h2>Create Command:</h2>
+                
+                <div id="CMDForm">
+                    <h2>Create Command</h2>
                 <label for="Namecreate"><h3>Name:</h3></label><input type="text" id="NameCreate">
                 <label for="Desccreate"><h3>Description:</h3></label><input type="text" id="Desccreate">
                 <label for="CmdResponse"><h3>Response:</h3></label><input type="text" id="CmdResponse">
+                </div>
                 <br>
                 <br>
-                <a href="javascript:void(0)" onclick="createCommandFile()"><div id="CMDCreateBTN">Create Command</div></a>
+                <a href="javascript:void(0)" onclick="dummyCommandCreate()"><div id="CMDCreateBTN">Create Command</div></a>
                 <br>
                 <a href="javascript:void(0)" onclick="BackCreate()"><div id="CreateBack">Back</div></a>
             </div>
         </div>
         <div class="DashboardCmdList">
             <h2>Custom Commands</h2>
+            <h3><div id="CommandList">
+
+            </div></h3>
             
         </div>
     </div>

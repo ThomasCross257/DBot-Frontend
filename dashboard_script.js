@@ -73,6 +73,31 @@ function createCommandFile(){
     }
 
 }
+
+function dummyCommandCreate(){
+  var Name = document.getElementById("NameCreate").value;
+  var Description = document.getElementById("Desccreate").value;
+  var Response = document.getElementById("CmdResponse").value;
+  if(Name === "" || Description === "" || Response === ""){
+    window.alert("None of the boxes may be empty!");
+    return;
+  }
+  else{
+    const newCommand = document.createElement("div");
+    const Title = document.createTextNode(Name);
+    newCommand.appendChild(Title);
+    newCommand.setAttribute('id', "CUSTOM_CMD");
+    newCommand.href = "javascript:void(0)";
+    document.getElementById("CommandList").appendChild(newCommand);
+    document.getElementById("ChildDivs").style.display = "block";
+    document.getElementById("CMDCreate").style.display = "none";
+    document.getElementById("CMDSelect").style.display = "none";
+    document.getElementById("CMDSelect").style.display = "block";
+    document.getElementById("noCMD").style.display = "none";
+    document.getElementById("firstCreate").style.display  = "none";
+    document.getElementById("firstCreate").style.display  = "block";
+  }  
+}
 function returnServers(){
     var ServerList = document.getElementById("ServerList");
     var Dashboard = document.getElementById("ServerDashboardMain");
